@@ -1,0 +1,1101 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../busca-informacoes-cpf-cnpj-crm-cna/">
+      
+      
+        <link rel="next" href="../consulta-de-transporte-aereo/">
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
+    
+    
+      
+        <title>Câmeras Online - OSINT Brazuca</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/mermaid@8.5.1/dist/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cameras-online" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="OSINT Brazuca" class="md-header__button md-logo" aria-label="OSINT Brazuca" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OSINT Brazuca
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Câmeras Online
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent=""  aria-label="Light"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Light" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent=""  aria-label="Dark"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Dark" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fellipematos/osint-brazuca-mkdocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OSINT Brazuca" class="md-nav__button md-logo" aria-label="OSINT Brazuca" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    OSINT Brazuca
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fellipematos/osint-brazuca-mkdocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../autores/" class="md-nav__link">
+        Autores
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="true">
+          Brazuca
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Brazuca" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Brazuca
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beneficios-sociais/" class="md-nav__link">
+        Benefícios Sociais
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../busca-informacoes-cpf-cnpj-crm-cna/" class="md-nav__link">
+        Busca de Informações via CPF/CNPJ/CRM/CNA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Câmeras Online
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Câmeras Online
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projeto-city-cameras" class="md-nav__link">
+    Projeto City Câmeras
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-cia-de-engenharia-de-trafego-cet" class="md-nav__link">
+    Câmeras Cia. de Engenharia de Tráfego (CET)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-der-departamento-de-estradas-de-rodagem-der" class="md-nav__link">
+    Câmeras DER - Departamento de Estradas de Rodagem (DER)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-rodovias-online" class="md-nav__link">
+    Câmeras Rodovias Online
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-concessionaria-tamoios" class="md-nav__link">
+    Câmeras Concessionária Tamoios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-concessionaria-ecorodovias" class="md-nav__link">
+    Câmeras Concessionária EcoRodovias
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-daer-rio-grande-do-sul" class="md-nav__link">
+    Câmeras DAER - Rio Grande do Sul
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-governo-de-santa-catarina" class="md-nav__link">
+    Câmeras Governo de Santa Catarina
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-da-prefeitura-de-joao-pessoa-pb-semob" class="md-nav__link">
+    Câmeras da Prefeitura de João Pessoa - PB (SEMOB)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-da-prefeitura-de-recife-pe-cttu" class="md-nav__link">
+    Câmeras da Prefeitura de Recife - PE (CTTU)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-do-centro-integrado-de-operacoes-de-belem-do-para-segup-no-transito" class="md-nav__link">
+    Câmeras do Centro Integrado de Operações de Belém do Pará (Segup no Trânsito)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-da-bhtrans-em-beta-ainda" class="md-nav__link">
+    Câmeras da BHTRANS (Em beta ainda)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consulta-de-transporte-aereo/" class="md-nav__link">
+        Consulta de Transporte Aéreo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consulta-de-transporte-terrestre/" class="md-nav__link">
+        Consulta de Transporte Terrestre
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consulta-processos/" class="md-nav__link">
+        Consulta de Processos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dominios-br/" class="md-nav__link">
+        Categorias de Domínios .br
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../estacao-radio-base-erbs/" class="md-nav__link">
+        Estação Rádio Base / ERBs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../estados-brasileiros/" class="md-nav__link">
+        Categorias por Estados Brasileiros
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indexadores-servico-mensagens-instantaneas/" class="md-nav__link">
+        Indexadores de Serviço de Mensagens Instantâneas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../informacoes-academicas/" class="md-nav__link">
+        Informações Acadêmicas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapas-georreferenciamento/" class="md-nav__link">
+        Mapas e Georreferenciamento
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../motores-busca-contexto-brasil/" class="md-nav__link">
+        Motores de Busca Contexto Brasil
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../outras-buscas/" class="md-nav__link">
+        Outras Buscas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rede-social/" class="md-nav__link">
+        Rede Social
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../saude/" class="md-nav__link">
+        Saúde
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../telecom/" class="md-nav__link">
+        Telecom
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
+          Regex
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Regex" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Regex
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Regex/documentos-brasileiros/" class="md-nav__link">
+        Documentos Brasileiros
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Regex/regex-genericas/" class="md-nav__link">
+        Genéricas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Regex/tab/" class="md-nav__link">
+        Tab
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projeto-city-cameras" class="md-nav__link">
+    Projeto City Câmeras
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-cia-de-engenharia-de-trafego-cet" class="md-nav__link">
+    Câmeras Cia. de Engenharia de Tráfego (CET)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-der-departamento-de-estradas-de-rodagem-der" class="md-nav__link">
+    Câmeras DER - Departamento de Estradas de Rodagem (DER)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-rodovias-online" class="md-nav__link">
+    Câmeras Rodovias Online
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-concessionaria-tamoios" class="md-nav__link">
+    Câmeras Concessionária Tamoios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-concessionaria-ecorodovias" class="md-nav__link">
+    Câmeras Concessionária EcoRodovias
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-daer-rio-grande-do-sul" class="md-nav__link">
+    Câmeras DAER - Rio Grande do Sul
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-governo-de-santa-catarina" class="md-nav__link">
+    Câmeras Governo de Santa Catarina
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-da-prefeitura-de-joao-pessoa-pb-semob" class="md-nav__link">
+    Câmeras da Prefeitura de João Pessoa - PB (SEMOB)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-da-prefeitura-de-recife-pe-cttu" class="md-nav__link">
+    Câmeras da Prefeitura de Recife - PE (CTTU)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-do-centro-integrado-de-operacoes-de-belem-do-para-segup-no-transito" class="md-nav__link">
+    Câmeras do Centro Integrado de Operações de Belém do Pará (Segup no Trânsito)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras-da-bhtrans-em-beta-ainda" class="md-nav__link">
+    Câmeras da BHTRANS (Em beta ainda)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+<h1 id="cameras-online">Câmeras Online 🎥</h1>
+<h2 id="projeto-city-cameras">Projeto City Câmeras</h2>
+<p>O Projeto City Câmeras é um programa público, de iniciativa exclusiva da Prefeitura Municipal de São Paulo, que visa constituir uma ampla rede de videomonitoramento por meio de câmeras públicas e privadas instaladas pela cidade.</p>
+<p><a href="https://www.citycameras.prefeitura.sp.gov.br/home">https://www.citycameras.prefeitura.sp.gov.br/home</a></p>
+<hr />
+<h2 id="cameras-cia-de-engenharia-de-trafego-cet">Câmeras Cia. de Engenharia de Tráfego (CET)</h2>
+<p><a href="http://cameras.cetsp.com.br/">http://cameras.cetsp.com.br/</a></p>
+<hr />
+<h2 id="cameras-der-departamento-de-estradas-de-rodagem-der">Câmeras DER - Departamento de Estradas de Rodagem (DER)</h2>
+<p><a href="http://www.der.sp.gov.br/WebSite/Servicos/ServicosOnline/CamerasOnlineMapa.aspx">http://www.der.sp.gov.br/WebSite/Servicos/ServicosOnline/CamerasOnlineMapa.aspx</a></p>
+<hr />
+<h2 id="cameras-rodovias-online">Câmeras Rodovias Online</h2>
+<p>O site Rodovias Online é um serviço de Utilidade Pública, onde procuramos reunir de forma fácil e eficaz visualizações de câmeras on-line.</p>
+<table>
+<thead>
+<tr>
+<th>Links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="rodoviasonline.com.br">rodoviasonline.com.br</a></td>
+</tr>
+<tr>
+<td><a href="http://www.rodoviasonline.com.br/rodovias-der-sp/">http://www.rodoviasonline.com.br/rodovias-der-sp/</a></td>
+</tr>
+<tr>
+<td><a href="http://www.rodoviasonline.com.br/cameras-ao-vivo-das-rodovias-do-estado-do-parana/">http://www.rodoviasonline.com.br/cameras-ao-vivo-das-rodovias-do-estado-do-parana/</a></td>
+</tr>
+<tr>
+<td><a href="https://www.rodoviasonline.com.br/cameras-ao-vivo-nas-rodovias-do-rio-grande-de-sul-daer-rs/">https://www.rodoviasonline.com.br/cameras-ao-vivo-nas-rodovias-do-rio-grande-de-sul-daer-rs/</a></td>
+</tr>
+<tr>
+<td><a href="https://www.rodoviasonline.com.br/rodovia-governador-ney-braga-br-277/">https://www.rodoviasonline.com.br/rodovia-governador-ney-braga-br-277/</a></td>
+</tr>
+<tr>
+<td><a href="https://www.rodoviasonline.com.br/cameras-ao-vivo-viapar-parana/">https://www.rodoviasonline.com.br/cameras-ao-vivo-viapar-parana/</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="cameras-concessionaria-tamoios">Câmeras Concessionária Tamoios</h2>
+<table>
+<thead>
+<tr>
+<th>Links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="concessionariatamoios.com.br">concessionariatamoios.com.br</a></td>
+</tr>
+<tr>
+<td><a href="https://concessionariatamoios.com.br/cameras/ver/12">https://concessionariatamoios.com.br/cameras/ver/12</a></td>
+</tr>
+<tr>
+<td><a href="https://concessionariatamoios.com.br/cameras/ver/14">https://concessionariatamoios.com.br/cameras/ver/14</a></td>
+</tr>
+<tr>
+<td><a href="https://concessionariatamoios.com.br/cameras/ver/10">https://concessionariatamoios.com.br/cameras/ver/10</a></td>
+</tr>
+<tr>
+<td><a href="https://concessionariatamoios.com.br/cameras/ver/9">https://concessionariatamoios.com.br/cameras/ver/9</a></td>
+</tr>
+<tr>
+<td><a href="https://concessionariatamoios.com.br/cameras/ver/8">https://concessionariatamoios.com.br/cameras/ver/8</a></td>
+</tr>
+<tr>
+<td><a href="https://concessionariatamoios.com.br/cameras/ver/13">https://concessionariatamoios.com.br/cameras/ver/13</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="cameras-concessionaria-ecorodovias">Câmeras Concessionária EcoRodovias</h2>
+<p><a href="ecovias.com.br">ecovias.com.br</a></p>
+<p><a href="https://www.ecovias.com.br/condicoes-da-via#condition-camera">https://www.ecovias.com.br/condicoes-da-via#condition-camera</a></p>
+<table>
+<thead>
+<tr>
+<th>Local</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BALANCA IMIGRANTES PLANALTO</td>
+<td><a href="https://www.ecovias.com.br/boletim/camera/2">https://www.ecovias.com.br/boletim/camera/2</a></td>
+</tr>
+<tr>
+<td>ENTRADA IMIGRANTES PLANALTO</td>
+<td><a href="http://site.ecovias.com.br/cameras/vpon/">http://site.ecovias.com.br/cameras/vpon/0kamera1.jpg</a></td>
+</tr>
+<tr>
+<td>PEDAGIO IMIGRANTES</td>
+<td><a href="https://www.ecovias.com.br/boletim/camera/4">https://www.ecovias.com.br/boletim/camera/4</a></td>
+</tr>
+<tr>
+<td>PLANALTO IMIGRANTES</td>
+<td><a href="http://site.ecovias.com.br/cameras/vpon/0kamera6.jpg">http://site.ecovias.com.br/cameras/vpon/0kamera6.jpg</a></td>
+</tr>
+<tr>
+<td>TRECHO SERRA IMIGRANTES</td>
+<td><a href="https://www.ecovias.com.br/boletim/camera/6">https://www.ecovias.com.br/boletim/camera/6</a></td>
+</tr>
+<tr>
+<td>BALANCA IMIGRANTES BAIXADA</td>
+<td><a href="https://www.ecovias.com.br/boletim/camera/7">https://www.ecovias.com.br/boletim/camera/7</a></td>
+</tr>
+<tr>
+<td>ACESSO IMIGRANTES BAIXADA</td>
+<td><a href="https://www.ecovias.com.br/boletim/camera/8">https://www.ecovias.com.br/boletim/camera/8 </a></td>
+</tr>
+<tr>
+<td>INTERLIGACAO PLANALTO</td>
+<td><a href="https://www.ecovias.com.br/boletim/camera/15">https://www.ecovias.com.br/boletim/camera/15</a></td>
+</tr>
+<tr>
+<td>TREVO CUBATAO</td>
+<td><a href="https://www.ecovias.com.br/boletim/camera/1">https://www.ecovias.com.br/boletim/camera/1</a></td>
+</tr>
+<tr>
+<td>ANCHIETA RIBEIRAO DOS COUROS</td>
+<td><a href="https://www.ecovias.com.br/boletim/camera/">https://www.ecovias.com.br/boletim/camera/11</a></td>
+</tr>
+<tr>
+<td>SERRA ANCHIETA</td>
+<td><a href="https://www.ecovias.com.br/boletim/camera/12">https://www.ecovias.com.br/boletim/camera/12</a></td>
+</tr>
+<tr>
+<td>ANCHIETA TREVO DA VOLKSWAGEM</td>
+<td><a href="https://www.ecovias.com.br/boletim/camera/">https://www.ecovias.com.br/boletim/camera/13</a></td>
+</tr>
+<tr>
+<td>PEDAGIO ANCHIETA</td>
+<td><a href="https://www.ecovias.com.br/boletim/camera/14">https://www.ecovias.com.br/boletim/camera/14</a></td>
+</tr>
+<tr>
+<td>ENTRADA SANTOS</td>
+<td><a href="https://www.ecovias.com.br/boletim/camera/16">https://www.ecovias.com.br/boletim/camera/16</a></td>
+</tr>
+<tr>
+<td>PEDAGIO GUARUJA</td>
+<td><a href="https://www.ecovias.com.br/boletim/camera/9">https://www.ecovias.com.br/boletim/camera/9</a></td>
+</tr>
+<tr>
+<td>PEDAGIO SAO VICENTE</td>
+<td><a href="https://www.ecovias.com.br/boletim/camera/10">https://www.ecovias.com.br/boletim/camera/10</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="cameras-daer-rio-grande-do-sul">Câmeras DAER - Rio Grande do Sul</h2>
+<p><a href="https://daer.kopp.com.br/ftp/imagem.php?id=Santa_Maria">https://daer.kopp.com.br/ftp/imagem.php?id=Santa_Maria</a></p>
+<hr />
+<h2 id="cameras-governo-de-santa-catarina">Câmeras Governo de Santa Catarina</h2>
+<table>
+<thead>
+<tr>
+<th>Links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="ssp.sc.gov.br">ssp.sc.gov.br</a></td>
+</tr>
+<tr>
+<td><a href="https://www.ssp.sc.gov.br/dtic/index.php/cameras/cameras-online">https://www.ssp.sc.gov.br/dtic/index.php/cameras/cameras-online</a></td>
+</tr>
+<tr>
+<td><a href="https://www.ssp.sc.gov.br/dtic/index.php/cameras/cameras-online-florianopolis">https://www.ssp.sc.gov.br/dtic/index.php/cameras/cameras-online-florianopolis</a></td>
+</tr>
+<tr>
+<td><a href="https://www.ssp.sc.gov.br/dtic/index.php/cameras/cameras-online-florianopolis-trindade">https://www.ssp.sc.gov.br/dtic/index.php/cameras/cameras-online-florianopolis-trindade</a></td>
+</tr>
+<tr>
+<td><a href="https://www.ssp.sc.gov.br/dtic/index.php/cameras/cameras-online-florianopolis-2">https://www.ssp.sc.gov.br/dtic/index.php/cameras/cameras-online-florianopolis-2</a></td>
+</tr>
+<tr>
+<td><a href="https://www.ssp.sc.gov.br/dtic/index.php/cameras/cameras-online-sao-jose">https://www.ssp.sc.gov.br/dtic/index.php/cameras/cameras-online-sao-jose</a></td>
+</tr>
+<tr>
+<td><a href="https://www.ssp.sc.gov.br/dtic/index.php/cameras/cameras-online-biguacu">https://www.ssp.sc.gov.br/dtic/index.php/cameras/cameras-online-biguacu</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="cameras-da-prefeitura-de-joao-pessoa-pb-semob">Câmeras da Prefeitura de João Pessoa - PB (SEMOB)</h2>
+<p><a href="http://transito.gtrans.com.br/semobjp/index.php/portal/index">http://transito.gtrans.com.br/semobjp/index.php/portal/index</a></p>
+<hr />
+<h2 id="cameras-da-prefeitura-de-recife-pe-cttu">Câmeras da Prefeitura de Recife - PE (CTTU)</h2>
+<p><a href="http://transito.gtrans.com.br/cttupe/index.php/mapa">http://transito.gtrans.com.br/cttupe/index.php/mapa</a></p>
+<hr />
+<h2 id="cameras-do-centro-integrado-de-operacoes-de-belem-do-para-segup-no-transito">Câmeras do Centro Integrado de Operações de Belém do Pará (Segup no Trânsito)</h2>
+<p><a href="http://www.ciop.pa.gov.br/index.php/banner-camera">http://www.ciop.pa.gov.br/index.php/banner-camera</a></p>
+<hr />
+<h2 id="cameras-da-bhtrans-em-beta-ainda">Câmeras da BHTRANS (Em beta ainda)</h2>
+<p><a href="http://infotrafego.pbh.gov.br/info_trafego_cameras.html">http://infotrafego.pbh.gov.br/info_trafego_cameras.html</a></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@8.5.1/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

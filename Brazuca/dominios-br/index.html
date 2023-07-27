@@ -1,0 +1,1535 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../consulta-processos/">
+      
+      
+        <link rel="next" href="../estacao-radio-base-erbs/">
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
+    
+    
+      
+        <title>Categorias de Domínios .br - OSINT Brazuca</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/mermaid@8.5.1/dist/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#categorias-de-dominios-br" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="OSINT Brazuca" class="md-header__button md-logo" aria-label="OSINT Brazuca" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OSINT Brazuca
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Categorias de Domínios .br
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent=""  aria-label="Light"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Light" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent=""  aria-label="Dark"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Dark" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fellipematos/osint-brazuca-mkdocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OSINT Brazuca" class="md-nav__button md-logo" aria-label="OSINT Brazuca" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    OSINT Brazuca
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fellipematos/osint-brazuca-mkdocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../autores/" class="md-nav__link">
+        Autores
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="true">
+          Brazuca
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Brazuca" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Brazuca
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beneficios-sociais/" class="md-nav__link">
+        Benefícios Sociais
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../busca-informacoes-cpf-cnpj-crm-cna/" class="md-nav__link">
+        Busca de Informações via CPF/CNPJ/CRM/CNA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cameras-online/" class="md-nav__link">
+        Câmeras Online
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consulta-de-transporte-aereo/" class="md-nav__link">
+        Consulta de Transporte Aéreo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consulta-de-transporte-terrestre/" class="md-nav__link">
+        Consulta de Transporte Terrestre
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consulta-processos/" class="md-nav__link">
+        Consulta de Processos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Categorias de Domínios .br
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Categorias de Domínios .br
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-dominios" class="md-nav__link">
+    Lista de Domínios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asn-disponiveis-do-whois-publico-do-registro-nir-nicbr" class="md-nav__link">
+    ASN disponíveis do Whois público do registro NIR Nic.br
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../estacao-radio-base-erbs/" class="md-nav__link">
+        Estação Rádio Base / ERBs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../estados-brasileiros/" class="md-nav__link">
+        Categorias por Estados Brasileiros
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indexadores-servico-mensagens-instantaneas/" class="md-nav__link">
+        Indexadores de Serviço de Mensagens Instantâneas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../informacoes-academicas/" class="md-nav__link">
+        Informações Acadêmicas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapas-georreferenciamento/" class="md-nav__link">
+        Mapas e Georreferenciamento
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../motores-busca-contexto-brasil/" class="md-nav__link">
+        Motores de Busca Contexto Brasil
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../outras-buscas/" class="md-nav__link">
+        Outras Buscas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rede-social/" class="md-nav__link">
+        Rede Social
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../saude/" class="md-nav__link">
+        Saúde
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../telecom/" class="md-nav__link">
+        Telecom
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
+          Regex
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Regex" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Regex
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Regex/documentos-brasileiros/" class="md-nav__link">
+        Documentos Brasileiros
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Regex/regex-genericas/" class="md-nav__link">
+        Genéricas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Regex/tab/" class="md-nav__link">
+        Tab
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-dominios" class="md-nav__link">
+    Lista de Domínios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asn-disponiveis-do-whois-publico-do-registro-nir-nicbr" class="md-nav__link">
+    ASN disponíveis do Whois público do registro NIR Nic.br
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+<h1 id="categorias-de-dominios-br">Categorias de Domínios .br 📰</h1>
+<p>Abaixo estão listadas todas as categorias de domínio .br oferecidas pelo Registro.br. Os domínios de pessoa física e profissionais liberais só podem ser registrados por um titular com CPF. Os domínios de pessoa jurídica devem ser associados a um CNPJ. Já os domínios genéricos e de cidades podem ser registrados por CPF ou CNPJ. </p>
+<h3 id="lista-de-dominios">Lista de Domínios</h3>
+<table>
+<thead>
+<tr>
+<th>TLD</th>
+<th>Destinado a</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APP.BR</td>
+<td>Genéricos</td>
+<td>Aplicativos</td>
+</tr>
+<tr>
+<td>ART.BR</td>
+<td>Genéricos</td>
+<td>Artes: música, pintura, folclore</td>
+</tr>
+<tr>
+<td>COM.BR</td>
+<td>Genéricos</td>
+<td>Atividades comerciais</td>
+</tr>
+<tr>
+<td>DEV.BR</td>
+<td>Genéricos</td>
+<td>Desenvolvedores e Plataformas de Desenvolvimento</td>
+</tr>
+<tr>
+<td>ECO.BR</td>
+<td>Genéricos</td>
+<td>Atividades com foco eco-ambiental</td>
+</tr>
+<tr>
+<td>EMP.BR</td>
+<td>Genéricos</td>
+<td>Pequenas e micro-empresas</td>
+</tr>
+<tr>
+<td>LOG.BR</td>
+<td>Genéricos</td>
+<td>Transportes e Logistica</td>
+</tr>
+<tr>
+<td>NET.BR</td>
+<td>Genéricos</td>
+<td>Atividades comerciais</td>
+</tr>
+<tr>
+<td>ONG.BR</td>
+<td>Genéricos</td>
+<td>Atividades não governamentais individuais ou associativas</td>
+</tr>
+<tr>
+<td>SEG.BR</td>
+<td>Genéricos</td>
+<td>Segurança</td>
+</tr>
+<tr>
+<td>TEC.BR</td>
+<td>Genéricos</td>
+<td>Tecnologia</td>
+</tr>
+<tr>
+<td>EDU.BR</td>
+<td>Universidades</td>
+<td>Instituições de ensino superior</td>
+</tr>
+<tr>
+<td>BLOG.BR</td>
+<td>Pessoas Físicas</td>
+<td>Web logs</td>
+</tr>
+<tr>
+<td>FLOG.BR</td>
+<td>Pessoas Físicas</td>
+<td>Foto logs</td>
+</tr>
+<tr>
+<td>NOM.BR</td>
+<td>Pessoas Físicas</td>
+<td>Pessoas Físicas</td>
+</tr>
+<tr>
+<td>VLOG.BR</td>
+<td>Pessoas Físicas</td>
+<td>Vídeo logs</td>
+</tr>
+<tr>
+<td>WIKI.BR</td>
+<td>Pessoas Físicas</td>
+<td>Páginas do tipo 'wiki'</td>
+</tr>
+<tr>
+<td>ADM.BR</td>
+<td>Profissionais Liberais</td>
+<td>Administradores</td>
+</tr>
+<tr>
+<td>ADV.BR</td>
+<td>Profissionais Liberais</td>
+<td>Advogados</td>
+</tr>
+<tr>
+<td>ARQ.BR</td>
+<td>Profissionais Liberais</td>
+<td>Arquitetos</td>
+</tr>
+<tr>
+<td>ATO.BR</td>
+<td>Profissionais Liberais</td>
+<td>Atores</td>
+</tr>
+<tr>
+<td>BIB.BR</td>
+<td>Profissionais Liberais</td>
+<td>Bibliotecários / Biblioteconomistas</td>
+</tr>
+<tr>
+<td>BIO.BR</td>
+<td>Profissionais Liberais</td>
+<td>Biólogos</td>
+</tr>
+<tr>
+<td>BMD.BR</td>
+<td>Profissionais Liberais</td>
+<td>Biomédicos</td>
+</tr>
+<tr>
+<td>CIM.BR</td>
+<td>Profissionais Liberais</td>
+<td>Corretores</td>
+</tr>
+<tr>
+<td>CNG.BR</td>
+<td>Profissionais Liberais</td>
+<td>Cenógrafos</td>
+</tr>
+<tr>
+<td>CNT.BR</td>
+<td>Profissionais Liberais</td>
+<td>Contadores</td>
+</tr>
+<tr>
+<td>COZ.BR</td>
+<td>Profissionais Liberais</td>
+<td>Profissionais de Gastronomia</td>
+</tr>
+<tr>
+<td>DES.BR</td>
+<td>Profissionais Liberais</td>
+<td>"Designers" e Desenhistas</td>
+</tr>
+<tr>
+<td>DET.BR</td>
+<td>Profissionais Liberais</td>
+<td>Detetives / Investigadores Particulares</td>
+</tr>
+<tr>
+<td>ECN.BR</td>
+<td>Profissionais Liberais</td>
+<td>Economistas</td>
+</tr>
+<tr>
+<td>ENF.BR</td>
+<td>Profissionais Liberais</td>
+<td>Profissionais de Enfermagem</td>
+</tr>
+<tr>
+<td>ENG.BR</td>
+<td>Profissionais Liberais</td>
+<td>Engenheiros</td>
+</tr>
+<tr>
+<td>ETI.BR</td>
+<td>Profissionais Liberais</td>
+<td>Especialista em Tecnologia da Informação</td>
+</tr>
+<tr>
+<td>FND.BR</td>
+<td>Profissionais Liberais</td>
+<td>Fonoaudiólogos</td>
+</tr>
+<tr>
+<td>FOT.BR</td>
+<td>Profissionais Liberais</td>
+<td>Fotógrafos</td>
+</tr>
+<tr>
+<td>FST.BR</td>
+<td>Profissionais Liberais</td>
+<td>Fisioterapeutas</td>
+</tr>
+<tr>
+<td>GEO.BR</td>
+<td>Profissionais Liberais</td>
+<td>Geólogos</td>
+</tr>
+<tr>
+<td>GGF.BR</td>
+<td>Profissionais Liberais</td>
+<td>Geógrafos</td>
+</tr>
+<tr>
+<td>JOR.BR</td>
+<td>Profissionais Liberais</td>
+<td>Jornalistas</td>
+</tr>
+<tr>
+<td>LEL.BR</td>
+<td>Profissionais Liberais</td>
+<td>Leiloeiros</td>
+</tr>
+<tr>
+<td>MAT.BR</td>
+<td>Profissionais Liberais</td>
+<td>Matemáticos e Estatísticos</td>
+</tr>
+<tr>
+<td>MED.BR</td>
+<td>Profissionais Liberais</td>
+<td>Médicos</td>
+</tr>
+<tr>
+<td>MUS.BR</td>
+<td>Profissionais Liberais</td>
+<td>Músicos</td>
+</tr>
+<tr>
+<td>NOT.BR</td>
+<td>Profissionais Liberais</td>
+<td>Notários</td>
+</tr>
+<tr>
+<td>NTR.BR</td>
+<td>Profissionais Liberais</td>
+<td>Nutricionistas</td>
+</tr>
+<tr>
+<td>ODO.BR</td>
+<td>Profissionais Liberais</td>
+<td>Dentistas</td>
+</tr>
+<tr>
+<td>PPG.BR</td>
+<td>Profissionais Liberais</td>
+<td>Publicitários e profissionais da área de propaganda e marketing</td>
+</tr>
+<tr>
+<td>PRO.BR</td>
+<td>Profissionais Liberais</td>
+<td>Professores</td>
+</tr>
+<tr>
+<td>PSC.BR</td>
+<td>Profissionais Liberais</td>
+<td>Psicólogos</td>
+</tr>
+<tr>
+<td>QSL.BR</td>
+<td>Profissionais Liberais</td>
+<td>Rádio amadores</td>
+</tr>
+<tr>
+<td>REP.BR</td>
+<td>Profissionais Liberais</td>
+<td>Representantes Comerciais</td>
+</tr>
+<tr>
+<td>SLG.BR</td>
+<td>Profissionais Liberais</td>
+<td>Sociólogos</td>
+</tr>
+<tr>
+<td>TAXI.BR</td>
+<td>Profissionais Liberais</td>
+<td>Taxistas</td>
+</tr>
+<tr>
+<td>TEO.BR</td>
+<td>Profissionais Liberais</td>
+<td>Teólogos</td>
+</tr>
+<tr>
+<td>TRD.BR</td>
+<td>Profissionais Liberais</td>
+<td>Tradutores</td>
+</tr>
+<tr>
+<td>VET.BR</td>
+<td>Profissionais Liberais</td>
+<td>Veterinários</td>
+</tr>
+<tr>
+<td>ZLG.BR</td>
+<td>Profissionais Liberais</td>
+<td>Zoólogos</td>
+</tr>
+<tr>
+<td>9GUACU.BR</td>
+<td>Cidades</td>
+<td>Nova Iguaçu</td>
+</tr>
+<tr>
+<td>ABC.BR</td>
+<td>Cidades</td>
+<td>Região ABC Paulista</td>
+</tr>
+<tr>
+<td>AJU.BR</td>
+<td>Cidades</td>
+<td>Aracaju</td>
+</tr>
+<tr>
+<td>ANANI.BR</td>
+<td>Cidades</td>
+<td>Ananindeua</td>
+</tr>
+<tr>
+<td>APARECIDA.BR</td>
+<td>Cidades</td>
+<td>Aparecida</td>
+</tr>
+<tr>
+<td>BARUERI.BR</td>
+<td>Cidades</td>
+<td>Barueri</td>
+</tr>
+<tr>
+<td>BELEM.BR</td>
+<td>Cidades</td>
+<td>Belém</td>
+</tr>
+<tr>
+<td>BHZ.BR</td>
+<td>Cidades</td>
+<td>Belo Horizonte</td>
+</tr>
+<tr>
+<td>BOAVISTA.BR</td>
+<td>Cidades</td>
+<td>Boa Vista</td>
+</tr>
+<tr>
+<td>BSB.BR</td>
+<td>Cidades</td>
+<td>Brasília</td>
+</tr>
+<tr>
+<td>CAMPINAGRANDE.BR</td>
+<td>Cidades</td>
+<td>Campina Grande</td>
+</tr>
+<tr>
+<td>CAMPINAS.BR</td>
+<td>Cidades</td>
+<td>Campinas</td>
+</tr>
+<tr>
+<td>CAXIAS.BR</td>
+<td>Cidades</td>
+<td>Caxias</td>
+</tr>
+<tr>
+<td>CONTAGEM.BR</td>
+<td>Cidades</td>
+<td>Contagem</td>
+</tr>
+<tr>
+<td>CUIABA.BR</td>
+<td>Cidades</td>
+<td>Cuiabá</td>
+</tr>
+<tr>
+<td>CURITIBA.BR</td>
+<td>Cidades</td>
+<td>Curitiba</td>
+</tr>
+<tr>
+<td>FEIRA.BR</td>
+<td>Cidades</td>
+<td>Feira de Santana</td>
+</tr>
+<tr>
+<td>FLORIPA.BR</td>
+<td>Cidades</td>
+<td>Florianópolis</td>
+</tr>
+<tr>
+<td>FORTAL.BR</td>
+<td>Cidades</td>
+<td>Fortaleza</td>
+</tr>
+<tr>
+<td>FOZ.BR</td>
+<td>Cidades</td>
+<td>Foz do Iguaçu</td>
+</tr>
+<tr>
+<td>GOIANIA.BR</td>
+<td>Cidades</td>
+<td>Goiânia</td>
+</tr>
+<tr>
+<td>GRU.BR</td>
+<td>Cidades</td>
+<td>Guarulhos</td>
+</tr>
+<tr>
+<td>JAB.BR</td>
+<td>Cidades</td>
+<td>Jaboatão dos Guararapes</td>
+</tr>
+<tr>
+<td>JAMPA.BR</td>
+<td>Cidades</td>
+<td>João Pessoa</td>
+</tr>
+<tr>
+<td>JDF.BR</td>
+<td>Cidades</td>
+<td>Juiz de Fora</td>
+</tr>
+<tr>
+<td>JOINVILLE.BR</td>
+<td>Cidades</td>
+<td>Joinville</td>
+</tr>
+<tr>
+<td>LONDRINA.BR</td>
+<td>Cidades</td>
+<td>Londrina</td>
+</tr>
+<tr>
+<td>MACAPA.BR</td>
+<td>Cidades</td>
+<td>Macapá</td>
+</tr>
+<tr>
+<td>MACEIO.BR</td>
+<td>Cidades</td>
+<td>Maceió</td>
+</tr>
+<tr>
+<td>MANAUS.BR</td>
+<td>Cidades</td>
+<td>Manaus</td>
+</tr>
+<tr>
+<td>MARINGA.BR</td>
+<td>Cidades</td>
+<td>Maringá</td>
+</tr>
+<tr>
+<td>MORENA.BR</td>
+<td>Cidades</td>
+<td>Campo Grande</td>
+</tr>
+<tr>
+<td>NATAL.BR</td>
+<td>Cidades</td>
+<td>Natal</td>
+</tr>
+<tr>
+<td>NITEROI.BR</td>
+<td>Cidades</td>
+<td>Niterói</td>
+</tr>
+<tr>
+<td>OSASCO.BR</td>
+<td>Cidades</td>
+<td>Osasco</td>
+</tr>
+<tr>
+<td>PALMAS.BR</td>
+<td>Cidades</td>
+<td>Palmas</td>
+</tr>
+<tr>
+<td>POA.BR</td>
+<td>Cidades</td>
+<td>Porto Alegre</td>
+</tr>
+<tr>
+<td>PVH.BR</td>
+<td>Cidades</td>
+<td>Porto Velho</td>
+</tr>
+<tr>
+<td>RECIFE.BR</td>
+<td>Cidades</td>
+<td>Recife</td>
+</tr>
+<tr>
+<td>RIBEIRAO.BR</td>
+<td>Cidades</td>
+<td>Ribeirão</td>
+</tr>
+<tr>
+<td>RIO.BR</td>
+<td>Cidades</td>
+<td>Rio de Janeiro</td>
+</tr>
+<tr>
+<td>RIOBRANCO.BR</td>
+<td>Cidades</td>
+<td>Rio Branco</td>
+</tr>
+<tr>
+<td>RIOPRETO.BR</td>
+<td>Cidades</td>
+<td>São José do Rio Preto</td>
+</tr>
+<tr>
+<td>SALVADOR.BR</td>
+<td>Cidades</td>
+<td>Salvador</td>
+</tr>
+<tr>
+<td>SAMPA.BR</td>
+<td>Cidades</td>
+<td>São Paulo</td>
+</tr>
+<tr>
+<td>SANTAMARIA.BR</td>
+<td>Cidades</td>
+<td>Santa Maria</td>
+</tr>
+<tr>
+<td>SANTOANDRE.BR</td>
+<td>Cidades</td>
+<td>Santo André</td>
+</tr>
+<tr>
+<td>SAOBERNARDO.BR</td>
+<td>Cidades</td>
+<td>São Bernardo do Campo</td>
+</tr>
+<tr>
+<td>SAOGONCA.BR</td>
+<td>Cidades</td>
+<td>São Gonçalo</td>
+</tr>
+<tr>
+<td>SJC.BR</td>
+<td>Cidades</td>
+<td>São José dos Campos</td>
+</tr>
+<tr>
+<td>SLZ.BR</td>
+<td>Cidades</td>
+<td>São Luis</td>
+</tr>
+<tr>
+<td>SOROCABA.BR</td>
+<td>Cidades</td>
+<td>Sorocaba</td>
+</tr>
+<tr>
+<td>THE.BR</td>
+<td>Cidades</td>
+<td>Teresina</td>
+</tr>
+<tr>
+<td>UDI.BR</td>
+<td>Cidades</td>
+<td>Uberlândia</td>
+</tr>
+<tr>
+<td>VIX.BR</td>
+<td>Cidades</td>
+<td>Vitória</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>TLD</th>
+<th>Destinado a</th>
+<th><strong>SEM RESTRIÇÃO</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AGR.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Empresas agrícolas, fazendas</td>
+</tr>
+<tr>
+<td>ESP.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Esporte em geral</td>
+</tr>
+<tr>
+<td>ETC.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Empresas que não se enquadram nas outras categorias</td>
+</tr>
+<tr>
+<td>FAR.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Farmácias e drogarias</td>
+</tr>
+<tr>
+<td>IMB.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Imobiliárias</td>
+</tr>
+<tr>
+<td>IND.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Indústrias</td>
+</tr>
+<tr>
+<td>INF.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Meios de informação (rádios, jornais, bibliotecas, etc..)</td>
+</tr>
+<tr>
+<td>RADIO.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Empresas que queiram enviar áudio pela rede</td>
+</tr>
+<tr>
+<td>REC.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Atividades de entretenimento, diversão, jogos, etc...</td>
+</tr>
+<tr>
+<td>SRV.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Empresas prestadoras de serviços</td>
+</tr>
+<tr>
+<td>TMP.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Eventos temporários, como feiras e exposições</td>
+</tr>
+<tr>
+<td>TUR.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Empresas da área de turismo</td>
+</tr>
+<tr>
+<td>TV.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Empresas de radiodifusão ou transmissão via Internet de sons e imagens</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>TLD</th>
+<th>Destinado a</th>
+<th><strong>COM RESTRIÇÃO</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AM.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Empresas de radiodifusão sonora</td>
+</tr>
+<tr>
+<td>COOP.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Cooperativas</td>
+</tr>
+<tr>
+<td>FM.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Empresas de radiodifusão sonora</td>
+</tr>
+<tr>
+<td>G12.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Instituições de ensino de primeiro e segundo grau</td>
+</tr>
+<tr>
+<td>GOV.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Instituições do governo federal</td>
+</tr>
+<tr>
+<td>MIL.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Forças Armadas Brasileiras</td>
+</tr>
+<tr>
+<td>ORG.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Instituições não governamentais sem fins lucrativos</td>
+</tr>
+<tr>
+<td>PSI.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Provedores de serviço Internet</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>TLD</th>
+<th>Destinado a</th>
+<th><strong>DNSSEC OBRIGATÓRIO</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Bancos</td>
+</tr>
+<tr>
+<td>DEF.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Defensorias Públicas</td>
+</tr>
+<tr>
+<td>JUS.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Instituições do Poder Judiciário</td>
+</tr>
+<tr>
+<td>LEG.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Instituições do Poder Legislativo</td>
+</tr>
+<tr>
+<td>MP.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Instituições do Ministério Público</td>
+</tr>
+<tr>
+<td>TC.BR</td>
+<td><strong>Pessoas Jurídicas</strong></td>
+<td>Tribunais de Contas</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="asn-disponiveis-do-whois-publico-do-registro-nir-nicbr">ASN disponíveis do Whois público do registro NIR Nic.br</h2>
+<p>Compilação de informações de origem do prefixo ASN disponíveis do Whois público do registro NIR Nic.br.
+Campos separados por pipe: ASN|OrgName|OrgID|prefixos... </p>
+<p>Tradução da própria descrição fornecida pelo RegistroBR</p>
+<p><a href="https://ftp.registro.br/pub/numeracao/origin/00README">https://ftp.registro.br/pub/numeracao/origin/00README)</a>)</p>
+<table>
+<thead>
+<tr>
+<th>Descrição</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Diretório com histórico de arquivos</td>
+<td><a href="https://ftp.registro.br/pub/numeracao/origin/">https://ftp.registro.br/pub/numeracao/origin/</a></td>
+</tr>
+<tr>
+<td>Lista atualizada</td>
+<td><a href="https://ftp.registro.br/pub/numeracao/origin/nicbr-asn-blk-latest.txt">https://ftp.registro.br/pub/numeracao/origin/nicbr-asn-blk-latest.txt</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@8.5.1/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
