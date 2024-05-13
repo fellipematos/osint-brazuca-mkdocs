@@ -34,6 +34,10 @@ Contribuições de qualquer tipo são bem-vindas!
 
 **Fellipe (_z3ro7)** - [Twitter](https://twitter.com/matosfellipe_), [Git](https://github.com/fellipematos)
 
+<a href="https://github.com/osintbrazuca/osint-brazuca/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=osintbrazuca/osint-brazuca&max=500" alt="Lista de contribuidores" width="100%"/>
+</a>
+
 ---
 ## Créditos 👏
 À todas as instituições públicas governamentais e inciativas privadas que disponibilizaram os links para consulta.
